@@ -1,0 +1,15 @@
+/* init.fls : initial script for defaultDict 2017.11.01
+
+	Copyright (c) 2017 Koji Iigura
+	Released under the MIT license
+	http://opensource.org/licenses/mit-license.php
+*/
+
+
+"version" := "0.9" ;
+
+"()" := _[ "(" @word >compile ")" @word >compile ]_ ; 
+
+/* ex: 3.141592 "PI" set! */
+"set!" := swap () insert >noname swap assign ;
+
